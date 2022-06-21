@@ -1,0 +1,41 @@
+#menu {
+    width: 10%;
+    height: 100vh;
+    background-color: var(--cor-azul);
+}
+
+#container {
+    width: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    width: 98%;
+    /* height: 10%; */
+    margin-left: 2%;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+}
+
+#content {
+    height: 100%;
+    background-color: blue;
+}
+
+#navbar .info {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2vh;
+}
+
+#navbar .info .titulo, .tags {
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
