@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    outline: 0;
 }
 
 :root {
@@ -46,10 +47,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2vh;
+    border-radius: 1vh;
     background-color: var(--cor-laranja);
     color: var(--cor-branco);
-    padding: 1vh;
+    padding: 0.6vh 1vh 0.6vh 1vh;
     font-size: 1.8vh;
     font-weight: bold;
     margin-right: 0.5vw;
