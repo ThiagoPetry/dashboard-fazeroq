@@ -1,2 +1,5 @@
-# dashboard-fazeroq
-Front-end do projeto
+# Dashboard - FazerOQ
+
+Informações para: estabelecimento / prefeitura / usuário
+
+Link do figma:
