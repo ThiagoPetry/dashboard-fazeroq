@@ -6,28 +6,25 @@
 
 #container {
     width: 100%;
-    background-color: red;
     display: flex;
     flex-direction: column;
 }
 
 #navbar {
-    width: 98%;
-    /* height: 10%; */
-    margin-left: 2%;
-    background-color: green;
+    width: 100%;
+    background-color: var(--cor-nbranco);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: var(--borda);
 }
 
 #content {
     height: 100%;
-    background-color: blue;
 }
 
 #navbar .info {
-    background-color: orange;
+    margin-left: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,7 +32,6 @@
 }
 
 #navbar .info .titulo, .tags {
-    background-color: pink;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -47,15 +43,12 @@
 }
 
 #navbar .info .titulo h1:nth-child(1)::after {
-    /* content: '❯'; */
     content: '';
     width: 0.6vw;
     height: 2vh;
     background-image: url('../assets/seta.svg');
     background-size: cover;
     background-position: center;
-    /* font-size: 1.8vh;
-    color: black; */
     margin-top: 0.25vh;
     margin-left: 0.5vw;
 }
@@ -65,11 +58,10 @@
 }
 
 #navbar .info .tags {
-    margin-top: 1vh;
+    margin: 0.4vh 0 1vh 0;
 }
 
 #navbar .filtro {
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;

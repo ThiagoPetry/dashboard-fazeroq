@@ -11,6 +11,7 @@
     --cor-laranja: #FF7B45;
     --cor-branco: #FFFFFF;
     --cor-nbranco: #FDFDFF;
+    --borda: 0.1vh solid #EBEBEB;
 }
 
 body {
