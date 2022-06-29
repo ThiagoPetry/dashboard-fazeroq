@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: 0;
+    cursor: default;
 }
 
 :root {
@@ -55,4 +56,65 @@ p {
     font-size: 1.8vh;
     font-weight: bold;
     margin-right: 0.5vw;
+}
+
+.tag:hover {
+    cursor: pointer;
+}
+
+.box {
+    background-color: var(--cor-nbranco);
+    margin: 1.2vh 0 1.2vh 0;
+    padding: 0.5vh;
+    border-radius: 1vh;
+    border: var(--borda);
+}
+
+.box .item {
+    padding: 0 1vh 2vh 1vh;
+    margin-bottom: 1vh;
+    border-bottom: 0.1vh solid rgba(198, 198, 198, 0.7);
+}
+
+.box .item:nth-child(1) {
+    margin-top: 1vh;
+}
+
+.box .item:last-child {
+    padding: 0 1vh 1vh 1vh;
+    border-bottom: none;
+}
+
+.box .item h1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.4vh;
+}
+
+.box .item p {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vh;
+    font-weight: bold;
+    color: #7E7E7E;
+    margin-top: 2vh;
+}
+
+.box .item p a {
+    margin: 0 1.5vw 0 0;
+}
+
+.box .item p a::after {
+    content: '';
+    width: 13px;
+    height: 14px;
+    background-image: url('../assets/up.svg');
+    background-size: cover;
+    background-position: center;
 }

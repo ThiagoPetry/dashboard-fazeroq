@@ -44,8 +44,8 @@
 
 #navbar .info .titulo h1:nth-child(1)::after {
     content: '';
-    width: 0.6vw;
-    height: 2vh;
+    width: 0.5vw;
+    height: 1.7vh;
     background-image: url('../assets/seta.svg');
     background-size: cover;
     background-position: center;
@@ -76,4 +76,59 @@
     font-size: 2vh;
     font-weight: bold;
     color: #4F4F4F;
+}
+
+#content {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    padding: 2vh;
+}
+
+#content .esquerda {
+    width: 60%;
+    background-color: blue;
+}
+
+#content .esquerda .top {
+    height: 70%;
+    background-color: orange;
+    display: flex;
+    flex-direction: row;
+}
+
+#content .esquerda .top #visitas {
+    width: 30%;
+    background-color: yellow;
+}
+
+#content .esquerda .top .aux {
+    width: 70%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+#content .esquerda .top .aux .infos {
+    width: 100%;
+    height: 50%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+}
+
+#content .esquerda .top .aux #idade {
+    width: 100%;
+    height: 50%;
+    background-color: chocolate;
+}
+
+#content .esquerda .bottom {
+    height: 30%;
+    background-color: pink;
+}
+
+#content .direita {
+    width: 40%;
+    background-color: green;
 }
