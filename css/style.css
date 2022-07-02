@@ -1,134 +1,175 @@
 #menu {
-    width: 10%;
-    height: 100vh;
-    background-color: var(--cor-azul);
+  width: 10%;
+  height: 100vh;
+  background-color: var(--cor-azul);
 }
 
 #container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 #navbar {
-    width: 100%;
-    background-color: var(--cor-nbranco);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: var(--borda);
+  width: 100%;
+  background-color: var(--cor-nbranco);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: var(--borda);
 }
 
 #content {
-    height: 100%;
+  height: 100%;
 }
 
 #navbar .info {
-    margin-left: 2%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1vh 1vh 1vh 0;
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1vh 1vh 1vh 0;
 }
 
 #navbar .info .titulo, .tags {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 #navbar .info .titulo h1 {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #navbar .info .titulo h1:nth-child(1)::after {
-    content: '';
-    width: 0.5vw;
-    height: 1.7vh;
-    background-image: url('../assets/seta.svg');
-    background-size: cover;
-    background-position: center;
-    margin-top: 0.25vh;
-    margin-left: 0.5vw;
+  content: '';
+  width: 0.5vw;
+  height: 1.7vh;
+  background-image: url('../assets/seta.svg');
+  background-size: cover;
+  background-position: center;
+  margin-top: 0.25vh;
+  margin-left: 0.5vw;
 }
 
 #navbar .info .titulo h1:nth-child(2) {
-    margin-left: 0.5vw;    
+  margin-left: 0.5vw;    
 }
 
 #navbar .info .tags {
-    margin: 0.4vh 0 1vh 0;
+  margin: 0.4vh 0 1vh 0;
 }
 
 #navbar .filtro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1vh;
-    margin-right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh;
+  margin-right: 2%;
 }
 
 #navbar .filtro select {
-    padding: 1vh;
-    border-radius: 1vh;
-    border: 0.1vh solid #4F4F4F;
-    font-size: 2vh;
-    font-weight: bold;
-    color: #4F4F4F;
+  padding: 1vh;
+  border-radius: 1vh;
+  border: 0.1vh solid #4F4F4F;
+  font-size: 2vh;
+  font-weight: bold;
+  color: #4F4F4F;
 }
 
 #content {
-    background-color: red;
-    display: flex;
-    flex-direction: row;
-    padding: 2vh;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  padding: 2vh;
 }
 
 #content .esquerda {
-    width: 60%;
-    background-color: blue;
+  width: 60%;
+  background-color: blue;
 }
 
 #content .esquerda .top {
-    height: 70%;
-    background-color: orange;
-    display: flex;
-    flex-direction: row;
+  height: 70%;
+  background-color: orange;
+  display: flex;
+  flex-direction: row;
 }
 
 #content .esquerda .top #visitas {
-    width: 30%;
-    background-color: yellow;
+  width: 30%;
+  background-color: yellow;
 }
 
 #content .esquerda .top .aux {
-    width: 70%;
-    background-color: aqua;
-    display: flex;
-    flex-direction: column;
+  width: 70%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
 }
 
 #content .esquerda .top .aux .infos {
-    width: 100%;
-    height: 50%;
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: row;
+  height: 50%;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#content .esquerda .top .aux .infos #pesquisas {
+  width: 42.9%;
+  background-color: bisque;
+}
+
+#content .esquerda .top .aux .infos #total {
+  width: 42.9%;
+  background-color: cornflowerblue;
 }
 
 #content .esquerda .top .aux #idade {
-    width: 100%;
-    height: 50%;
-    background-color: chocolate;
+  width: 90%;
+  height: 50%;
+  background-color: chocolate;
+  margin: 2.5% 5% 0% 5%;
 }
 
 #content .esquerda .bottom {
-    height: 30%;
-    background-color: pink;
+  height: 30%;
+  background-color: pink;
 }
 
 #content .direita {
-    width: 40%;
-    background-color: green;
+  width: 40%;
+  background-color: green;
+}
+
+/* #qtd_visitas .item {
+  padding: 0 1vh 2vh 1vh;
+  margin-bottom: 1vh;
+  border-bottom: 0.1vh solid rgba(198, 198, 198, 0.7);
+}
+
+#qtd_visitas .item:nth-child(1) {
+  margin-top: 1vh;
+} */
+
+#qtd_idade {
+  height: 72.5%;
+  display: flex;
+  flex-direction: row;
+}
+
+#qtd_idade .numeros {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: red;
+  margin: 0 0.5vw 0 0.5vw;
+}
+
+#qtd_idade .barras {
+  width: 100%;
+  background-color: green;
 }
