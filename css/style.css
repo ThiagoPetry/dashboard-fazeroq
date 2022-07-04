@@ -165,11 +165,67 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: red;
   margin: 0 0.5vw 0 0.5vw;
 }
 
 #qtd_idade .barras {
   width: 100%;
-  background-color: green;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1vh;
+}
+
+#qtd_idade .barras .grafico {
+  width: 100%;
+  height: 100%;
+  background-color: #d5e4fc;
+  border-radius: 1vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+#qtd_idade .barras .grafico .barra {
+  width: 14%;
+  background-color: var(--cor-azul);
+  border-radius: 1vh 1vh 0 0;
+}
+
+#qtd_idade .barras .grafico .barra:hover {
+  cursor: pointer;
+  opacity: 0.95;
+}
+
+#qtd_idade .barras .grafico .barra:active {
+  opacity: 0.85;
+}
+
+#idade1 {
+  height: 40%;
+}
+
+#idade2 {
+  height: 25%;
+}
+
+#idade3 {
+  height: 75%;
+}
+
+#idade4 {
+  height: 90%;
+}
+
+#qtd_idade .barras .info_barra {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#qtd_idade .numeros p, #qtd_idade .barras .info_barra p {
+  color: #7E7E7E;
+  font-size: 2vh;
+  font-weight: bold;
 }

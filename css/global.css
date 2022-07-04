@@ -71,7 +71,12 @@ p {
 }
 
 .titulo_box svg {
+  width: 4%;
   margin-right: 0.2vw;
+}
+
+.titulo_box .svg_maior {
+  width: 8%;
 }
 
 .titulo_box svg:hover {
