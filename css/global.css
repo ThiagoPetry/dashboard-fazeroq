@@ -88,6 +88,32 @@ p {
   opacity: 0.85;
 }
 
+.titulo_box h1.cor_azul, h2.cor_azul {
+  color: var(--cor-azul)
+}
+
+.titulo_box h1.cor_verde, h2.cor_verde {
+  color: var(--cor-verde)
+}
+
+.titulo_box h1.cor_laranja, h2.cor_laranja {
+  color: var(--cor-laranja)
+}
+
+.titulo_box > span {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.titulo_box > span:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .box {
   background-color: var(--cor-nbranco);
   margin: 1.2vh 0 1.2vh 0;
@@ -156,5 +182,21 @@ p {
   background-image: url('../assets/down.svg');
   background-size: cover;
   background-position: center;
+  display: none;
+}
+
+#msg_fixada {
+  position: absolute;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vh;
+  text-shadow: 0 0 0.2vh rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.25);
   display: none;
 }

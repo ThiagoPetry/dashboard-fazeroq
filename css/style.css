@@ -139,6 +139,16 @@
   background-color: pink;
 }
 
+#content .esquerda .bottom #qtd_visitantes_criancas {
+  height: 50%;
+  background-color: deeppink;
+}
+
+#content .esquerda .bottom #qtd_visitantes_genero {
+  height: 50%;
+  background-color: mediumaquamarine;
+}
+
 #content .direita {
   width: 40%;
   background-color: green;
@@ -187,7 +197,7 @@
 }
 
 #qtd_idade .barras .grafico .barra {
-  width: 14%;
+  width: 12%;
   background-color: var(--cor-azul);
   border-radius: 1vh 1vh 0 0;
 }
@@ -228,4 +238,9 @@
   color: #7E7E7E;
   font-size: 2vh;
   font-weight: bold;
+}
+
+#qtd_idade .barras .info_barra p {
+  width: 100%;
+  text-align: center;
 }
