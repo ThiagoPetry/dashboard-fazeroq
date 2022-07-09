@@ -24,6 +24,17 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+select::-ms-expand {
+  display: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.1vh;
+  text-overflow: '';
+}
+
 a {
   text-decoration: none;
 }
@@ -72,11 +83,21 @@ p {
 
 .titulo_box svg {
   width: 4%;
+  margin-top: 0.2vh;
   margin-right: 0.2vw;
 }
 
 .titulo_box .svg_maior {
   width: 8%;
+}
+
+.titulo_box .svg_menor {
+  width: 2.6%;
+}
+
+.titulo_box .svg_medio {
+  width: 5%;
+  margin-left: 1vw;
 }
 
 .titulo_box svg:hover {
@@ -146,6 +167,11 @@ p {
   font-size: 2.4vh;
 }
 
+.box .item h1 > svg {
+  width: 1.4vw;
+  /* height: 3vh; */
+}
+
 .box .item p {
   width: 100%;
   display: flex;
@@ -194,9 +220,9 @@ p {
   justify-content: center;
   align-items: center;
   font-size: 10vh;
-  text-shadow: 0 0 0.2vh rgba(0, 0, 0, 0.1);
+  /* text-shadow: 0 0 0.2vh rgba(0, 0, 0, 0.1); */
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.5);
+  /* background-color: rgba(0, 0, 0, 0.5); */
   color: rgba(255, 255, 255, 0.25);
-  display: none;
+  /* display: none; */
 }
